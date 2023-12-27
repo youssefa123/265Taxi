@@ -1,5 +1,4 @@
 /* GENERAL */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
@@ -20,14 +19,12 @@ p {
 }
 
 /* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -37,6 +34,9 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  background-color: #808584; /* Dark background for contrast */
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),
+              0 2px 4px -2px rgba(0,0,0,0.1);
 }
 
 .nav-links {
@@ -45,23 +45,21 @@ nav {
   font-size: 1.5rem;
 }
 
-a {
-  color: black;
+.nav-links a {
+  color: #ffffff; /* White text for links for better contrast */
   text-decoration: none;
-  text-decoration-color: white;
 }
 
-a:hover {
-  color: grey;
+.nav-links a:hover {
+  color: #ffd700; /* A golden color for hover state to match the logo */
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
   font-style: italic;
   font-size: 3.5rem;
-  color: rgb(5, 25, 241);
+  color: #ffd700; /* Golden color to match the logo and stand out against the dark background */
 }
 
 .logo:hover {
@@ -99,7 +97,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: rgb(255, 213, 0);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -287,7 +285,7 @@ section {
 
 .about-pic {
   border-radius: 1rem;
-  height: 
+  
 }
 
 .arrow {
@@ -441,4 +439,122 @@ footer p {
     height: 550px;
     width: 400px;
     margin: auto 0;
+}
+
+/* Profile Section */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh 10vw;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  width: 100%;
+}
+
+.section__pic-container .profile-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section__text {
+  text-align: left;
+}
+
+.intro-text {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  color: #000;
+  margin: 0.5rem 0;
+}
+
+.tagline {
+  font-size: 1.75rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.btn.book-now {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #FFD700;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn.book-now:hover {
+  background-color: #e0c200;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-section {
+      flex-direction: column-reverse;
+      padding: 5vh 5vw;
+  }
+
+  .main-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .section__pic-container {
+      margin-bottom: 2vh;
+  }
+
+  .section__text .main-title,
+  .section__text .tagline {
+      text-align: center;
+  }
+}
+
+/* Additional General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.intro-text, .tagline {
+  color: #333;
+}
+
+a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+
+#contact .contact-info-container a {
+  color: black; /* Sets the link color to black */
+  text-decoration: none; /* Optional: removes underline */
+}
+
+#contact .contact-info-container a:hover {
+  color: black; /* Keeps the link color black on hover */
+  text-decoration: underline; /* Optional: adds underline on hover */
 }
