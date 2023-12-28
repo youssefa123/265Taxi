@@ -490,6 +490,7 @@ footer p {
   font-size: 1rem;
   background-color: #FFD700;
   color: #fff;
+  color: #333;
   border: none;
   border-radius: 2rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
@@ -499,6 +500,7 @@ footer p {
 
 .btn.book-now:hover {
   background-color: #e0c200;
+  background-color: #cca200;
 }
 
 /* Responsive Design */
@@ -557,4 +559,40 @@ a:hover {
 #contact .contact-info-container a:hover {
   color: black; /* Keeps the link color black on hover */
   text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+
+/* CSS: Define styles for the new container */
+.about-text-background {
+  background-color: #f8f8f8; /* Light grey background for subtle contrast */
+  padding: 20px;
+  border-radius: 10px; /* Soften the edges */
+}
+
+.text-container h2 {
+  color: #222; /* or use a color that matches your branding */
+}
+
+.text-container p {
+  color: #333; /* Dark grey for better readability */
+  font-size: 20px; /* Moved from inline style to CSS for cleaner HTML */
+}
+
+/* Enhance the Experience section visually */
+.details-container {
+  background-color: #e0e0e0; /* A slightly different background for the Experience box */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+/* Improve the Experience icon */
+.icon.experience {
+  filter: grayscale(100%) brightness(50%); /* Make the icon subtle */
+}
+
+/* Interactive arrow enhancements */
+.icon.arrow:hover {
+  transform: translateY(-5px); /* Slight move to indicate interactivity */
+  cursor: pointer;
 }
