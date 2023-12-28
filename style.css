@@ -8,6 +8,26 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.display-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* For transitions */
+.transition-all {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+/* For transforms */
+.transform-translateY {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 html {
@@ -596,3 +616,4 @@ a:hover {
   transform: translateY(-5px); /* Slight move to indicate interactivity */
   cursor: pointer;
 }
+
