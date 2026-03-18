@@ -5,33 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alley's Way Car Service INC</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
     <nav id="desktop-nav">
         <div class="logo">Alley's Way Car Service</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Areas</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="tel:+18452658294" class="nav-book-btn">Book a Ride</a></li>
-            </ul>
-        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Areas</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="tel:+18452658294" class="nav-book-btn">Book a Ride</a></li>
+        </ul>
     </nav>
 
     <nav id="hamburger-nav">
         <div class="logo">Alley's Way Car Service</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
-                <span class="hamburger-icon-span"></span>
-                <span class="hamburger-icon-span"></span>
-                <span class="hamburger-icon-span"></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Areas</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="tel:+18452658294" onclick="toggleMenu()">Book a Ride</a></li>
             </div>
         </div>
     </nav>
@@ -46,7 +44,7 @@
             <p class="tagline">Professional limousine service to all NYC airports and piers — serving Putnam, Dutchess, Orange & Westchester counties for over 16 years.</p>
             <p class="intro-text">We accept all major credit cards and corporate accounts.</p>
             <div class="hero-actions">
-                <button class="btn book-now" onclick="location.href='tel:+18452658294'">Reserve Your Ride</button>
+                <a href="tel:+18452658294" class="btn book-now">Reserve Your Ride</a>
                 <a href="#about" class="btn-ghost">Learn more →</a>
             </div>
         </div>
@@ -84,7 +82,7 @@
                         <p>16 years</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/experience.png" alt="Service icon" class="icon" />
+                        <img src="./assets/experience.png" alt="Coverage icon" class="icon" />
                         <h3>Coverage</h3>
                         <p>4 Counties</p>
                     </div>
@@ -106,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='#projects'" />
     </section>
 
     <div class="gold-line"></div>
@@ -116,46 +114,46 @@
         <p class="section__text__p1">Coverage</p>
         <h1 class="title">Areas We Serve</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
+            <div class="areas-grid">
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img src="./assets/Putnam.png" alt="Putnam County" class="project-img" />
                     </div>
-                    <h2 class="experience-sub-title project-title">Putnam County</h2>
+                    <h2 class="project-title">Putnam County</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='tel:+18452658294'">Book Now</button>
+                        <a href="tel:+18452658294" class="btn btn-color-2 project-btn">Book Now</a>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img src="./assets/Dutchess.png" alt="Dutchess County" class="project-img" />
                     </div>
-                    <h2 class="experience-sub-title project-title">Dutchess County</h2>
+                    <h2 class="project-title">Dutchess County</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='tel:+18452658294'">Book Now</button>
+                        <a href="tel:+18452658294" class="btn btn-color-2 project-btn">Book Now</a>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img src="./assets/Orange.png" alt="Orange County" class="project-img" />
                     </div>
-                    <h2 class="experience-sub-title project-title">Orange County</h2>
+                    <h2 class="project-title">Orange County</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='tel:+18452658294'">Book Now</button>
+                        <a href="tel:+18452658294" class="btn btn-color-2 project-btn">Book Now</a>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img src="./assets/Westchester.png" alt="Westchester County" class="project-img" />
                     </div>
-                    <h2 class="experience-sub-title project-title">Westchester County</h2>
+                    <h2 class="project-title">Westchester County</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='tel:+18452658294'">Book Now</button>
+                        <a href="tel:+18452658294" class="btn btn-color-2 project-btn">Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='#contact'" />
     </section>
 
     <div class="gold-line"></div>
@@ -175,8 +173,8 @@
                 <p><a href="tel:+18452658294">845-265-8294</a></p>
             </div>
         </div>
-        <div class="btn-container" style="margin-top: 2rem;">
-            <button class="btn book-now" onclick="location.href='tel:+18452658294'">Call to Book Now</button>
+        <div class="btn-container" style="margin-top: 2.5rem;">
+            <a href="tel:+18452658294" class="btn book-now">Call to Book Now</a>
         </div>
     </section>
 
